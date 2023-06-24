@@ -5,10 +5,14 @@ package lessons.java;
 
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП
-interface Operation {
-    void calculate(int a, int b);
+abstract class Operation {
+    /*void calculate(int a, int b);*/
 
-    void calculate();
+    void calculate() {
+
+    }
+
+    public abstract void calculate(int a, int b);
 }
 public class Draft1_Task2_1_1 {
     static int a = 10;
@@ -22,13 +26,12 @@ public class Draft1_Task2_1_1 {
 
             @Override
             public void calculate(int a, int b) {
-                result = a + b;
-                System.out.println("Сложение: " + a + " + " + b + " = " + result);
+
             }
 
-            @Override
-            public void calculate() {
-
+            {
+                result = a + b;
+                System.out.println("Сложение: " + a + " + " + b + " = " + result);
             }
         };
         add.calculate();
