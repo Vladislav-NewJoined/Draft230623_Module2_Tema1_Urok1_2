@@ -17,6 +17,7 @@ public class Draft1_Task2_1_1 {
                 "\nвыполняющий 4 основных арифметических функций, сложение, вычитание, деление, умножение, " +
                 "\nа также осуществить вывод на результатов на экран\n\nРешение: ");
         Operation add = new Operation() {
+
             @Override
             public void calculate(int a, int b) {
                 result = a + b;
@@ -28,20 +29,6 @@ public class Draft1_Task2_1_1 {
 
             }
         };
-
-            /*@Override
-            public void calculate() {
-                System.out.println("mew");
-                catSayCounter++;
-                System.out.println(catSayCounter);
-            }
-        };*/
-
         add.calculate();
     }
 }
-
-/*
-interface Operation {
-        void calculate(int a, int b);
-}*/
